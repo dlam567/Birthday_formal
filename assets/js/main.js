@@ -9,6 +9,22 @@ let DefaultName = "XCJ";  // Important !!!!!!!!!!!!!!!!!!!!!!!===!!!!!!!!!!!!!!!
 let Birthday_date = "01/15";
 // =========!!!!!!!!!!!!!!!!=========
 
+const loading = {
+	container: document.querySelector(".loading"),
+	in(target) {
+		this.container.classList.remove("loading_out");
+		setTimeout(() => {
+			window.location.href = target;
+		}, 1000)
+	},
+	out() {
+		this.container.classList.add("loading_out");
+	}
+};
+window.addEventListener("load", () => {
+	loading.out();
+})
+loading.out();
 document.getElementById("userName").value=DefaultName;
 document.getElementById("Birthday_Date").innerHTML=Birthday_date;
 
