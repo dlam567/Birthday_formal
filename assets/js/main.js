@@ -24,7 +24,7 @@ const loading = {
 window.addEventListener("load", () => {
 	loading.out();
 })
-loading.out();
+
 document.getElementById("userName").value=DefaultName;
 document.getElementById("Birthday_Date").innerHTML=Birthday_date;
 

@@ -15,3 +15,4 @@ const loading = {
 window.addEventListener("load", () => {
     loading.out();
 })
+loading.out();
